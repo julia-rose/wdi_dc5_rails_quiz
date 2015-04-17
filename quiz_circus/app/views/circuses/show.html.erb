@@ -1,1 +1,13 @@
+<h1><%= @circus.name %></h1>
 
+<h3>Listing entertainers</h3>
+<ul>
+	<% @circus.entertainers.each do |entertainer| %>
+		<li><%= entertainer.name.capitalize %> - <%= entertainer.specialty %></li>
+	<% end %>
+</ul>
+
+
+
+
+<%= link_to "Back to the index", root_path %>
